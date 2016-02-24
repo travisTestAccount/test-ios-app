@@ -1,0 +1,11 @@
+fastlane_version "1.63.0"
+
+default_platform :ios
+
+platform :ios do
+
+  desc "Run all the tests"
+  lane :test do
+    scan(device: "iPhone 6s (9.2)")
+  end
+end
